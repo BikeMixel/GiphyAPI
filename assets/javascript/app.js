@@ -16,26 +16,23 @@ function renderPage() {
             url: queryUrl,
             method: "GET"
         }).then(function (response) {
-            console.log(response)
             var results = response.data;
             for (var j = 0; j < 10; j++) {
                 var imageDiv = $("#imageHolder")
                 var p = $("<p>").text("Rating: " + results[i].rating)
                 var sportImage = $("<img src='" + results[j].images.fixed_height_still.url + "' source-move='" + results[j].images.fixed_height.url + 
                                     "' source-still='" + results[j].images.fixed_height_still.url + "' img-state='still'>")
-                sportImage.addClass("gif")
                 imageDiv.prepend(p)
                 imageDiv.prepend(sportImage)
             }
             $("img").on("click", function () {
                 var state = $(this).attr("img-state")
-                console.log($(this).attr("img-state"))
 
-                if (state = "still") {
+                if (state === "still") {
                     $(this).attr("src", $(this).attr("source-move"))
                     $(this).attr("img-state", "animate")
                 }
-                else if (state = "animate") {
+                else if (state === "animate") {
                     $(this).attr("src", $(this).attr("source-still"))
                     $(this).attr("img-state", "still")
                 }
