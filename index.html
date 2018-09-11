@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+    <link rel="stylesheet" type="text/CSS" href="assets/css/style.css">
+    <title>Giphy API</title>
+</head>
+
+<body>
+    <div id = "head">
+    <h1>Sports GIF Generator!</h1>
+    <p>Just type in the name of a sport, press the button (or enter) and get a list of 10 corresponding GIFs!</p>
+    </div>
+    <div id="wrapper">
+        <div id="newButton">
+            <form>
+                <input id="add-sport" type="submit" value="Add A New Sport!">
+                <input type="text" id="newInput"><br>
+            </form>
+        </div>
+        <br>
+        <br>
+        <div id="buttons"></div>
+        <br>
+        <div id="imageHolder"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>
