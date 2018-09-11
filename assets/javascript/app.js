@@ -1,5 +1,5 @@
 
-var topics = ["football", "baseball", "basketball", "hockey"]
+var topics = ["football", "baseball", "lebron", "tom brady"]
 
 function renderPage() {
     for (var i = 0; i < topics.length; i++) {
